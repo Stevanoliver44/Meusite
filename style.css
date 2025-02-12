@@ -1,0 +1,235 @@
+/* Reset básico */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, sans-serif;
+
+}
+
+/* Garante que o site ocupe toda a largura e evite rolagem lateral */
+
+html, body {
+
+    width: 100%;
+
+    overflow-x: hidden;
+
+}
+
+/* Cores principais */
+
+:root {
+
+    --cor-primaria: #ff6600;  /* Laranja */
+
+    --cor-secundaria: #111;   /* Preto */
+
+    --cor-texto: #fff;        /* Branco */
+
+}
+
+/* Cabeçalho */
+
+header {
+
+    background-color: var(--cor-secundaria);
+
+    color: var(--cor-texto);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 20px;
+
+    width: 100%;
+
+}
+
+.logo img {
+
+    width: 120px;
+
+}
+
+nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+}
+
+nav ul li {
+
+    margin: 0 15px;
+
+}
+
+nav ul li a {
+
+    color: var(--cor-texto);
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+nav ul li a:hover {
+
+    color: var(--cor-primaria);
+
+}
+
+/* Banner */
+
+.banner {
+
+    background: url('banner.jpg') no-repeat center center/cover;
+
+    text-align: center;
+
+    color: var(--cor-texto);
+
+    padding: 100px 20px;
+
+    font-size: 24px;
+
+    background-color: var(--cor-primaria);
+
+    width: 100%;
+
+}
+
+/* Seção de Produtos */
+
+.produtos {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background-color: var(--cor-secundaria);
+
+    color: var(--cor-texto);
+
+    width: 100%;
+
+}
+
+.container-produtos {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+
+}
+
+/* Garante que os produtos não ultrapassem a tela */
+
+.produto {
+
+    background: var(--cor-primaria);
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    width: 200px;
+
+    transition: 0.3s;
+
+    max-width: 100%;
+
+}
+
+.produto:hover {
+
+    transform: scale(1.05);
+
+}
+
+.produto img {
+
+    width: 150px;
+
+    height: auto;
+
+    margin-bottom: 10px;
+
+    border-radius: 5px;
+
+}
+
+.produto h3 {
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+
+}
+
+.produto p {
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: var(--cor-secundaria);
+
+}
+
+/* Rodapé */
+
+footer {
+
+    background-color: var(--cor-primaria);
+
+    color: var(--cor-secundaria);
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+    font-weight: bold;
+
+    width: 100%;
+
+}
+
+footer a {
+
+    color: var(--cor-secundaria);
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+footer a:hover {
+
+    text-decoration: underline;
+
+}
